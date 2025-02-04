@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Хранилище MarsExchangeDBModel" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <Function Name="procCheckDBForUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="procCreateSHPCONMessages" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="procCreateWHSCONMessage" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="procCreateWMMBXYMessages" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tpChangeID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="procCreateWMMBXYMessages_120" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tpChangeID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="procCreateWMMBXYMessages_2_CONS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="procCreateWMMBXYOnlyEMailMessages" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="tpChangeID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="procCreateZWM_STK_BALMessages" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="procGetInboxMessage_test" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="fileName" Type="nvarchar(max)" Mode="In" />
+          <Parameter Name="fileBody" Type="nvarchar(max)" Mode="In" />
+        </Function>
+        <Function Name="procGetIncomingMessages" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="filename" Type="nvarchar" Mode="In" />
+          <Parameter Name="msg_txt" Type="varchar(max)" Mode="In" />
+        </Function>
+        <Function Name="procGetOutboxMessage_test" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="procGetOutgoingEMails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="procGetOutgoingMessages" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="procUpdateFromBATMAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IncomingMessageID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="procUpdateFromDESADV" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IncomingMessageID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="procUpdateFromMATMAS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IncomingMessageID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="procUpdateFromSHPORD" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="IncomingMessageID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="procUpdateOutgoingMessagesResult" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="MessageID" Type="int" Mode="In" />
+          <Parameter Name="StatusOut" Type="int" Mode="In" />
+          <Parameter Name="Result" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="Хранилище MarsExchangeDBModelContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MarsExchangeDBModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ExchangeEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="procCheckDBForUpdate" />
+          <FunctionImport Name="procCreateSHPCONMessages" />
+          <FunctionImport Name="procCreateWHSCONMessage" />
+          <FunctionImport Name="procCreateWMMBXYMessages">
+          <Parameter Name="tpChangeID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="procCreateWMMBXYMessages_120">
+          <Parameter Name="tpChangeID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="procCreateWMMBXYMessages_2_CONS" />
+          <FunctionImport Name="procCreateWMMBXYOnlyEMailMessages">
+          <Parameter Name="tpChangeID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="procCreateZWM_STK_BALMessages" ReturnType="Collection(String)" />
+          <FunctionImport Name="procGetIncomingMessages">
+            <Parameter Name="filename" Mode="In" Type="String" />
+            <Parameter Name="msg_txt" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="procGetOutgoingEMails" ReturnType="Collection(MarsExchangeDBModel.procGetOutgoingEMails_Result)" />
+          <FunctionImport Name="procGetOutgoingMessages" ReturnType="Collection(MarsExchangeDBModel.procGetOutgoingMessages_Result)" />
+          <FunctionImport Name="procUpdateFromBATMAS">
+          <Parameter Name="IncomingMessageID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="procUpdateFromDESADV">
+          <Parameter Name="IncomingMessageID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="procUpdateFromMATMAS">
+          <Parameter Name="IncomingMessageID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="procUpdateFromSHPORD">
+          <Parameter Name="IncomingMessageID" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="procUpdateOutgoingMessagesResult">
+            <Parameter Name="MessageID" Mode="In" Type="Int32" />
+            <Parameter Name="StatusOut" Mode="In" Type="Int32" />
+            <Parameter Name="Result" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="procGetInboxMessage_test">
+            <Parameter Name="fileName" Mode="In" Type="String" />
+            <Parameter Name="fileBody" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="procGetOutboxMessage_test" ReturnType="Collection(MarsExchangeDBModel.procGetOutboxMessage_test_Result)" />
+        </EntityContainer>
+        <ComplexType Name="procGetOutgoingEMails_Result">
+          <Property Type="Int32" Name="EMailID" Nullable="false" />
+          <Property Type="DateTime" Name="EMailDate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="EMailType" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="EMailTo" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="EMailSubj" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="EMailBody" Nullable="true" />
+          <Property Type="Int32" Name="StatusEMail" Nullable="true" />
+          <Property Type="String" Name="Result" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="procGetOutgoingMessages_Result">
+          <Property Type="Int32" Name="MessageID" Nullable="false" />
+          <Property Type="DateTime" Name="MessageDate" Nullable="true" Precision="23" />
+          <Property Type="String" Name="MessageType" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="FileName" Nullable="true" MaxLength="500" />
+          <Property Type="String" Name="FileBody" Nullable="true" />
+          <Property Type="Int32" Name="StatusOut" Nullable="true" />
+          <Property Type="String" Name="Result" Nullable="true" MaxLength="500" />
+        </ComplexType>
+        <ComplexType Name="procGetOutboxMessage_test_Result">
+          <Property Type="String" Name="FileName" Nullable="false" MaxLength="50" />
+          <Property Type="String" Name="FileBody" Nullable="false" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище MarsExchangeDBModelContainer" CdmEntityContainer="ExchangeEntities" >
+          <FunctionImportMapping FunctionImportName="procCheckDBForUpdate" FunctionName="Хранилище MarsExchangeDBModel.procCheckDBForUpdate" />
+          <FunctionImportMapping FunctionImportName="procCreateSHPCONMessages" FunctionName="Хранилище MarsExchangeDBModel.procCreateSHPCONMessages" />
+          <FunctionImportMapping FunctionImportName="procCreateWHSCONMessage" FunctionName="Хранилище MarsExchangeDBModel.procCreateWHSCONMessage" />
+          <FunctionImportMapping FunctionImportName="procCreateWMMBXYMessages" FunctionName="Хранилище MarsExchangeDBModel.procCreateWMMBXYMessages" />
+          <FunctionImportMapping FunctionImportName="procCreateWMMBXYMessages_120" FunctionName="Хранилище MarsExchangeDBModel.procCreateWMMBXYMessages_120" />
+          <FunctionImportMapping FunctionImportName="procCreateWMMBXYMessages_2_CONS" FunctionName="Хранилище MarsExchangeDBModel.procCreateWMMBXYMessages_2_CONS" />
+          <FunctionImportMapping FunctionImportName="procCreateWMMBXYOnlyEMailMessages" FunctionName="Хранилище MarsExchangeDBModel.procCreateWMMBXYOnlyEMailMessages" />
+          <FunctionImportMapping FunctionImportName="procCreateZWM_STK_BALMessages" FunctionName="Хранилище MarsExchangeDBModel.procCreateZWM_STK_BALMessages" />
+          <FunctionImportMapping FunctionImportName="procGetIncomingMessages" FunctionName="Хранилище MarsExchangeDBModel.procGetIncomingMessages" />
+          <FunctionImportMapping FunctionImportName="procGetOutgoingEMails" FunctionName="Хранилище MarsExchangeDBModel.procGetOutgoingEMails">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="MarsExchangeDBModel.procGetOutgoingEMails_Result">
+                <ScalarProperty Name="EMailID" ColumnName="EMailID" />
+                <ScalarProperty Name="EMailDate" ColumnName="EMailDate" />
+                <ScalarProperty Name="EMailType" ColumnName="EMailType" />
+                <ScalarProperty Name="EMailTo" ColumnName="EMailTo" />
+                <ScalarProperty Name="EMailSubj" ColumnName="EMailSubj" />
+                <ScalarProperty Name="EMailBody" ColumnName="EMailBody" />
+                <ScalarProperty Name="StatusEMail" ColumnName="StatusEMail" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="procGetOutgoingMessages" FunctionName="Хранилище MarsExchangeDBModel.procGetOutgoingMessages">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="MarsExchangeDBModel.procGetOutgoingMessages_Result">
+                <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+                <ScalarProperty Name="MessageDate" ColumnName="MessageDate" />
+                <ScalarProperty Name="MessageType" ColumnName="MessageType" />
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FileBody" ColumnName="FileBody" />
+                <ScalarProperty Name="StatusOut" ColumnName="StatusOut" />
+                <ScalarProperty Name="Result" ColumnName="Result" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="procUpdateFromBATMAS" FunctionName="Хранилище MarsExchangeDBModel.procUpdateFromBATMAS" />
+          <FunctionImportMapping FunctionImportName="procUpdateFromDESADV" FunctionName="Хранилище MarsExchangeDBModel.procUpdateFromDESADV" />
+          <FunctionImportMapping FunctionImportName="procUpdateFromMATMAS" FunctionName="Хранилище MarsExchangeDBModel.procUpdateFromMATMAS" />
+          <FunctionImportMapping FunctionImportName="procUpdateFromSHPORD" FunctionName="Хранилище MarsExchangeDBModel.procUpdateFromSHPORD" />
+          <FunctionImportMapping FunctionImportName="procUpdateOutgoingMessagesResult" FunctionName="Хранилище MarsExchangeDBModel.procUpdateOutgoingMessagesResult" />
+          <FunctionImportMapping FunctionImportName="procGetInboxMessage_test" FunctionName="Хранилище MarsExchangeDBModel.procGetInboxMessage_test" />
+          <FunctionImportMapping FunctionImportName="procGetOutboxMessage_test" FunctionName="Хранилище MarsExchangeDBModel.procGetOutboxMessage_test">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="MarsExchangeDBModel.procGetOutboxMessage_test_Result">
+                <ScalarProperty Name="FileName" ColumnName="FileName" />
+                <ScalarProperty Name="FileBody" ColumnName="FileBody" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

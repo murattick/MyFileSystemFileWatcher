@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<watch_path>
+		<inbox>C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\inbox</inbox>
+		<outbox>C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox</outbox>
+	</watch_path>
+	<success_path>C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\success</success_path>
+	<log>
+		<all>C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\EDI_log.txt</all>
+		<errors>C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\errors_log.txt</errors>
+	</log>
+</config>

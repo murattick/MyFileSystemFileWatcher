@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<confug>
+	<is_active>
+		false
+	</is_active>
+	<watch_path>
+		<inbox>
+			
+		</inbox>
+		<outbox>
+			
+		</outbox>
+	</watch_path>
+	<success_path>
+		<inbox>
+
+		</inbox>
+		<outbox>
+
+		</outbox>
+	</success_path>
+	<log>
+		<all>
+			
+		</all>
+		<errors>
+			
+		</errors>
+	</log>
+</confug>

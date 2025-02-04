@@ -1,0 +1,42 @@
+07.10.2020 09:36:10 Просматриваемая директория: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox
+07.10.2020 09:36:10 Просматриваемая директория: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\inbox
+07.10.2020 09:36:17 Файл: 003811037793404766@as2_am_gxsics_com был Created
+07.10.2020 09:36:17 Файл 003811037793404766@as2_am_gxsics_com был успешно передан в БД
+07.10.2020 09:36:18 Файл: 003811039229563031@as2_am_gxsics_com был Created
+07.10.2020 09:36:18 Файл 003811039229563031@as2_am_gxsics_com был успешно передан в БД
+07.10.2020 09:36:19 Файл: 003811039229804209@as2_am_gxsics_com был Created
+07.10.2020 09:36:19 Файл 003811039229804209@as2_am_gxsics_com был успешно передан в БД
+07.10.2020 09:36:20 Файл: 003811039535153203@as2_am_gxsics_com был Created
+07.10.2020 09:36:20 Файл 003811039535153203@as2_am_gxsics_com был успешно передан в БД
+07.10.2020 09:36:21 Файл: 003811039540555148@as2_am_gxsics_com был Created
+07.10.2020 09:36:21 Файл 003811039540555148@as2_am_gxsics_com был успешно передан в БД
+07.10.2020 09:36:22 Файл: 003811040076394549@as2_am_gxsics_com был Created
+07.10.2020 09:36:22 Файл 003811040076394549@as2_am_gxsics_com был успешно передан в БД
+07.10.2020 09:36:23 Файл: 003811040127003106@as2_am_gxsics_com был Created
+07.10.2020 09:36:23 Файл 003811040127003106@as2_am_gxsics_com был успешно передан в БД
+07.10.2020 09:36:24 Файл: 003811040287344008@as2_am_gxsics_com был Created
+07.10.2020 09:36:24 Файл 003811040287344008@as2_am_gxsics_com был успешно передан в БД
+07.10.2020 09:36:25 Файл: 003811040970729822@as2_am_gxsics_com был Created
+07.10.2020 09:36:25 Файл 003811040970729822@as2_am_gxsics_com был успешно передан в БД
+07.10.2020 09:36:26 Файл: 003811040970810206@as2_am_gxsics_com был Created
+07.10.2020 09:36:26 Файл 003811040970810206@as2_am_gxsics_com был успешно передан в БД
+07.10.2020 09:36:30 Файл: 003811037793404766@as2_am_gxsics_com был Created
+07.10.2020 09:36:30 Успешное создание файла на отправку: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox\003811037793404766@as2_am_gxsics_com
+07.10.2020 09:36:30 Успешное создание файла на отправку: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox\003811039229563031@as2_am_gxsics_com
+07.10.2020 09:36:30 Успешное создание файла на отправку: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox\003811039229804209@as2_am_gxsics_com
+07.10.2020 09:36:30 Успешное создание файла на отправку: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox\003811039535153203@as2_am_gxsics_com
+07.10.2020 09:36:30 Успешное создание файла на отправку: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox\003811039540555148@as2_am_gxsics_com
+07.10.2020 09:36:30 Успешное создание файла на отправку: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox\003811040076394549@as2_am_gxsics_com
+07.10.2020 09:36:30 Успешное создание файла на отправку: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox\003811040127003106@as2_am_gxsics_com
+07.10.2020 09:36:30 Успешное создание файла на отправку: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox\003811040287344008@as2_am_gxsics_com
+07.10.2020 09:36:30 Успешное создание файла на отправку: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox\003811040970729822@as2_am_gxsics_com
+07.10.2020 09:36:30 Успешное создание файла на отправку: C:\Users\aleksey.muratov\Source\repos\MyFileSystemFileWatcher\outbox\003811040970810206@as2_am_gxsics_com
+07.10.2020 09:36:32 Файл: 003811039229563031@as2_am_gxsics_com был Created
+07.10.2020 09:36:34 Файл: 003811039229804209@as2_am_gxsics_com был Created
+07.10.2020 09:36:36 Файл: 003811039535153203@as2_am_gxsics_com был Created
+07.10.2020 09:36:38 Файл: 003811039540555148@as2_am_gxsics_com был Created
+07.10.2020 09:36:40 Файл: 003811040076394549@as2_am_gxsics_com был Created
+07.10.2020 09:36:42 Файл: 003811040127003106@as2_am_gxsics_com был Created
+07.10.2020 09:36:44 Файл: 003811040287344008@as2_am_gxsics_com был Created
+07.10.2020 09:36:46 Файл: 003811040970729822@as2_am_gxsics_com был Created
+07.10.2020 09:36:48 Файл: 003811040970810206@as2_am_gxsics_com был Created
